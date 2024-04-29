@@ -9,10 +9,13 @@ public class Artista {
     private Album album;
     private Single single;
 
+    List<Album> albuns;
+    List<Single> singles;
+
     public Artista(String nomeDoArtista) {
         this.nomeDoArtista = nomeDoArtista;
-        List<Album> albuns = new ArrayList<>();
-        List<Single> singles = new ArrayList<>();
+        albuns = new ArrayList<>();
+        singles = new ArrayList<>();
     }
 
     public String getNomeDoArtista() {
@@ -24,8 +27,20 @@ public class Artista {
     }
 
 
+    public void addAlbum(Artista artista, String nomeAlbum) {
+        this.albuns.add(new Album(nomeAlbum));
+    }
+
+    public void addSingle(Artista artista, String nomeSingle) {
+        this.singles.add(new Single(nomeSingle));
+    }
+
+
     @Override
     public String toString() {
         return "Nome do Artista: " + nomeDoArtista;
     }
+
+
+
 }
