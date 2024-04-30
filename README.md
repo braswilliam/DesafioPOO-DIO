@@ -16,4 +16,4 @@ Nesse momento estou trabalhando a classe responsável por reproduzir músicas.
 ## Lista de tarefas:
 - [ ] 001 - Imprimir a lista de faixas da classe ``Album``;
 - [ ] 002 - Imprimir a lista de faixas da classe ``Single``;
-
+- [ ] 003 - Mandar para branch main.
